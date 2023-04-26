@@ -7,8 +7,8 @@ sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 
 def table_generator(classtype):
     """
-    para: a specific class that announced personally
-    return: a table of keywords and options from endpoint of sparql
+    参数：自定义的类
+    返回：关键字的表和选项
     """
     keyword = classtype.get_name()
     filter_dict = classtype.get_filters()
