@@ -33,3 +33,11 @@ B. Niksar
 C. Kumarlar (Çanakkale)
 D. Hozat
 ```
+#### *Example 2*
+```python
+What is the director of Profile (1954 film)?
+A. David Lister (director)
+B. Perarasu
+C. B. Narsing Rao
+D. Francis Searle
+'''
