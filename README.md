@@ -33,11 +33,19 @@ B. Niksar
 C. Kumarlar (Çanakkale)
 D. Hozat
 ```
-#### *Example 2*
+#### *Example 3*
 ```python
 What is the director of Profile (1954 film)?
 A. David Lister (director)
 B. Perarasu
 C. B. Narsing Rao
 D. Francis Searle
-'''
+```
+#### *Example 4*
+```python
+What is the author of Miami (book)?
+A. Joan Didion
+B. William Howarth
+C. James Leasor
+D. Franz Kafka
+```
