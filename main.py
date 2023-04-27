@@ -1,10 +1,12 @@
 from request import table_generator
 from classes.country import country, query_cities_of_country
+from classes.book import book
+from classes.film import film
 import random
 
 
 global classtype
-classtype = country()
+classtype = film()
 print(type(classtype))
 
 def generate_quiz(table_dict):
@@ -15,6 +17,7 @@ def generate_quiz(table_dict):
             keyword = country.replace('_',' ')
         else:
             wrongResults = [value for value in table_dict.values()]
+            keyword = random.choice([name for name in table_dict.keys()])
         if not wrongResults:
             continue
         question = f"What is the {classtype.get_opt()} of {keyword}? \n"
