@@ -21,12 +21,12 @@ def generate_quiz(table_dict):
         if not wrongResults:
             continue
         question = f"What is the {classtype.get_opt()} of {keyword}? \n"
-        options = [table_dict[keyword]]  # Initialized options list with right answer
+        options = [table_dict[keyword]]  # 用正确的答案初始化选项列表
         if options[0] in wrongResults:
             wrongResults.remove(options[0])
-        wrongOpt = random.sample(wrongResults, min(3, len(wrongResults)))  # Random pick 3 wrong answers
+        wrongOpt = random.sample(wrongResults, min(3, len(wrongResults)))  #随机选择3个错误答案
         options.extend(wrongOpt)
-        random.shuffle(options)  # Random select options
+        random.shuffle(options)  # 选项随机化
         
         # Transform options into A/B/C/D 
         choices = ["A", "B", "C", "D"]
