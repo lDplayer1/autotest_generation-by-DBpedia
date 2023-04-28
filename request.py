@@ -34,7 +34,7 @@ def table_generator(classtype):
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     quiz_dict = {}
-    ## An dict where key is the question theme and value is the right option.
+    ## 字典中，key是问题主题，值是正确答案
     for result in results["results"]["bindings"]:
         quizText = result[keyword]["value"].split("/")[-1].replace("_", " ")
         if quizText.find("History") >= 0:
